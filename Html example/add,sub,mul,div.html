@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript1</title>
+</head>
+
+<body>
+
+	<form>
+
+<table>
+	<tr>
+		<td>N1 : <input type="text" id="firstNumber" onchange="validate()" /></td>
+		<td><p id="val1" style="color: red; "></p></td>
+	</tr>
+	<tr>
+		<td>N2 : <input type="text" id="secondNumber" onchange="validate()" /></td>
+		<td><p id="val2" style="color: red; "></p></td>
+	</tr>
+
+</table>
+
+
+
+<p>Result:</p>
+<p id="result"></p>
+<p id="check"></p>
+<button type="button" onclick="add()">Addition</button>
+<button type="button" onclick="sub()">Subtraction</button>
+<button type="button" onclick="mul()">Multiplication</button>
+<button type="button" onclick="div()">Division</button>
+<!-- <button type="button" onchange="validate()"></button> -->
+</form>
+
+<script type="text/javascript">
+	function add()
+{
+        A = document.getElementById("firstNumber").value;
+        B = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = Number(A) + Number(B);
+}
+
+function sub() 
+{ 
+        A = document.getElementById("firstNumber").value;
+        B = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = A - B;
+}
+
+function mul() 
+{ 
+        A = document.getElementById("firstNumber").value;
+        B = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = A * B;
+}
+
+function div() 
+{ 
+        A = document.getElementById("firstNumber").value;
+        B = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = A / B;
+}
+
+function validate()
+{
+	var x=document.getElementById("firstNumber").value;
+	console.log(x);
+	var y=document.getElementById("secondNumber").value;
+	console.log(y);
+
+	if (!Number(x) && !Number(y)) 
+	{
+		alert("Not Valid");
+		document.getElementById("val1").innerHTML="Not Valid"
+		// document.getElementById("val2").innerHTML="Not Valid"
+    }
+    else
+    {
+    	document.getElementById("").innerHTML
+    }
+    
+
+	// if (isNaN(x))
+	// {
+	// 	text="Input not valid"
+ //    }
+ //    else
+ //    {
+ //    	text="Input OK"
+ //    }
+ //    document.getElementById("check").innerHTML=text;
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
